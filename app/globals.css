@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #F4F7F3;
+  color: #0F1A17;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono-tag {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7D6C4;
+  border-radius: 8px;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-crate-200 bg-white px-3 py-2 text-sm text-ink-900 placeholder:text-ink-900/40 focus:border-crate-600 focus:outline-none focus:ring-2 focus:ring-crate-600/20;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-crate-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-crate-700 disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg border border-crate-200 bg-white px-4 py-2 text-sm font-medium text-ink-900 transition hover:bg-crate-50;
+}
+
+.btn-danger {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-signal-600 px-3 py-1.5 text-xs font-medium text-white transition hover:opacity-90;
+}
+
+.card {
+  @apply rounded-xl border border-crate-100 bg-white shadow-panel;
+}
